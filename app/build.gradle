@@ -1,0 +1,30 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'ke.co.payswiftly.tap'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "ke.co.payswiftly.tap"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "0.1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+// Deliberately no dependencies: the app uses only the Android framework, so
+// there is nothing else that can fail to resolve.

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Registers this app as the emulated NFC Forum Type 4 Tag (NDEF Tag
+     Application). AID D2760000850101 is fixed by the NFC Forum spec; it is the
+     application every phone's NFC stack looks for when it reads a tag. -->
+<host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/service_desc"
+    android:requireDeviceUnlock="false">
+    <aid-group
+        android:description="@string/aid_desc"
+        android:category="other">
+        <aid-filter android:name="D2760000850101" />
+    </aid-group>
+</host-apdu-service>

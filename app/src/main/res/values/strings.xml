@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="service_desc">PaySwiftly payment link sender</string>
+    <string name="aid_desc">Sends a PaySwiftly payment link to a phone tapped against this one</string>
+</resources>
